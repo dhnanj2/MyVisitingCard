@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abf2f8"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dhananjay Sharma"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="264dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="*Thinker"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="132dp"
+        android:layout_height="26dp"
+        android:fontFamily="sans-serif-medium"
+        android:scrollbars="vertical"
+        android:text="Connect with me"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="98dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="264dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="*Problem\n  Solver"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="98dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="*Innovator"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="165dp"
+        android:layout_height="133dp"
+        android:scrollbars="horizontal|vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <Button
+        android:id="@+id/ButtonAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ShowAM"
+        android:text="About Me"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/bt_in"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#ABF2F8"
+        android:onClick="open_in"
+        android:text="in"
+        android:textAllCaps="false"
+        android:textColor="#0E76A8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <ImageButton
+        android:id="@+id/bt_insta"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="open_insta"
+        android:scaleType="fitXY"
+        android:src="@drawable/insta_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <ImageButton
+        android:id="@+id/bt_mail"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="open_mail"
+        android:scaleType="fitXY"
+        android:src="@drawable/mail_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+</androidx.constraintlayout.widget.ConstraintLayout>
